@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avni Yasar</title>
+    <meta name="description" content="Avni Yasar Personal Website">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/ut_fav.png">
+    <script src="script.js"></script>
+</head>
+
+<body>
+	<header>
+		<div id="logo"><img src="images/ut_fav.png">Benjamin Horne</div>
+		<nav>
+			<ul>
+				<li><a href="index.html">Home</a>
+				<li><a href="projects.html">Projects</a>
+        <li><a href="publications.html">Publications</a>
+        <!---    
+        <li><a href="pdfs/BenHorneCV.pdf">CV</a>
+        --->
+				<li><a href="https://scholar.google.com/citations?user=T47ya5QAAAAJ&hl=en">Scholar</a>
+			</ul>
+		</nav>
+	</header>
+	
+  <section>
+		<strong>Publications and Datasets (reverse chronological order)</strong>
+  </section>
+  
+	<section id="pageContent">
+		<main role="main">
+	
+  <article>
+				<p><b>Article 1</b><p>
+	<p> --- - <i> ----- </i></p>
+        <p>---</p>
+	</article>
+	
+  <article>
+				<p><b>Article 2</b><p>
+	<p>---</p>
+        <p>---</p>
+	<p><a href="---">Link</a></p>
+	</article>
+	
+  </main>
+	</section>
+	
+  <footer>
+		<p><b>Email:</b> yasarr.avni@gmail.com <b>|</b> <b>Linkedin:</b><a href="https://www.linkedin.com/in/huseyin-avni-yasar/"> huseyin-avni-yasar</a> <b></p>
+	</footer>
+
+</body>
+
+</html>
