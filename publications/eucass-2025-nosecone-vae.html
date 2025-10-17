@@ -1,39 +1,47 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
 <meta charset="utf-8">
-<title>VAE + Conditional MLP for Stagnation-Point Heat-Flux — EUCASS (2025)</title>
+<title>VAE for Stagnation Heat Flux on Nose Cones — EUCASS (2025)</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="EUCASS (July 2025). VAE geometry latent + conditional MLP for rapid stagnation-point heat-flux prediction.">
 <link rel="canonical" href="https://avniyasar.github.io/publications/eucass-2025-nosecone-vae.html">
 <meta name="robots" content="index,follow">
 
-<!-- OG/Twitter -->
-<meta property="og:type" content="article">
-<meta property="og:title" content="Rapid Stagnation Heat Flux Prediction on Parametric Nose Cones in Hypersonic Flow via Variational Autoencoding">
-<meta property="og:description" content="Surrogate approach: VAE geometry latent + conditional MLP; accurate, fast predictions beyond training conditions.">
-<meta property="og:url" content="https://avniyasar.github.io/publications/eucass-2025-nosecone-vae.html">
-<meta property="og:site_name" content="H. A. Yaşar">
-<meta name="twitter:card" content="summary_large_image">
-
-<!-- Highwire / Scholar -->
+<!-- Scholar -->
 <meta name="citation_title" content="Rapid Stagnation Heat Flux Prediction on Parametric Nose Cones in Hypersonic Flow via Variational Autoencoding">
 <meta name="citation_author" content="Hüseyin Avni Yaşar">
 <meta name="citation_author" content="Oguz Kaan Sevinc">
 <meta name="citation_publication_date" content="2025/07/01">
 <meta name="citation_conference_title" content="EUCASS">
 <meta name="citation_doi" content="10.13009/EUCASS2025-722">
-<meta name="citation_pdf_url" content="https://avniyasar.github.io/assets/papers/eucass2025_nosecone_preprint.pdf">
-<meta name="citation_abstract" content="Reliable prediction of stagnation point heat flux is essential for hypersonic vehicle design, yet high-fidelity simulations remain computationally demanding... offering a practical and efficient alternative to traditional CFD methods.">
-<link rel="alternate" type="application/x-bibtex" href="https://avniyasar.github.io/assets/bibtex/eucass2025_nosecone.bib">
+<!-- You do host this PDF -->
+<meta name="citation_pdf_url" content="https://avniyasar.github.io/publications/EUCASS2025-722.pdf">
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="VAE for Stagnation Heat Flux — EUCASS (2025)">
+<meta property="og:description" content="Yaşar & Sevinc · EUCASS (2025)">
+<meta property="og:url" content="https://avniyasar.github.io/publications/eucass-2025-nosecone-vae.html">
 
 <link rel="stylesheet" href="/css/uikit.min.css">
+<script src="/js/uikit.min.js"></script>
+<script src="/js/uikit-icons.min.js"></script>
 
-<!-- JSON-LD -->
+<style>
+  :root{--bg:#0b1324;--bg2:#0f1732}
+  body{font-family:system-ui,-apple-system,Segoe UI,Inter,Roboto,Arial,sans-serif}
+  .hero{background:linear-gradient(135deg,var(--bg),var(--bg2));color:#fff;padding:48px 0 28px;border-bottom:1px solid rgba(255,255,255,.08)}
+  .paper-title{color:#fff;margin:8px 0 6px;font-weight:800;line-height:1.15}
+  .tag{display:inline-block;padding:2px 10px;border-radius:999px;background:#1f2a52;color:#c7d2fe;font-size:12px;margin-right:6px}
+  .box{border:1px solid #e5e7eb;border-radius:12px;padding:18px}
+  .citation pre,.bibtex pre{white-space:pre-wrap;background:#0b1022;color:#e5e7eb;border-radius:10px;padding:14px;font-size:13.5px;margin:0}
+  .copy-btn{margin-left:6px}
+</style>
+
 <script type="application/ld+json">
 {
   "@context":"https://schema.org",
   "@type":"ScholarlyArticle",
   "headline":"Rapid Stagnation Heat Flux Prediction on Parametric Nose Cones in Hypersonic Flow via Variational Autoencoding",
-  "name":"Rapid Stagnation Heat Flux Prediction on Parametric Nose Cones in Hypersonic Flow via Variational Autoencoding",
   "author":[
     {"@type":"Person","name":"Hüseyin Avni Yaşar","identifier":"https://orcid.org/0000-0002-8441-9161"},
     {"@type":"Person","name":"Oguz Kaan Sevinc"}
@@ -41,26 +49,98 @@
   "isPartOf":{"@type":"Event","name":"EUCASS"},
   "datePublished":"2025-07-01",
   "identifier":"https://doi.org/10.13009/EUCASS2025-722",
-  "sameAs":"https://doi.org/10.13009/EUCASS2025-722",
-  "url":"https://avniyasar.github.io/publications/eucass-2025-nosecone-vae.html",
-  "encoding":{"@type":"MediaObject","contentUrl":"https://avniyasar.github.io/assets/papers/eucass2025_nosecone_preprint.pdf","encodingFormat":"application/pdf"},
-  "abstract":"Reliable prediction of stagnation point heat flux is essential for hypersonic vehicle design, yet high-fidelity simulations remain computationally demanding, limiting rapid design evaluations..."
+  "url":"https://avniyasar.github.io/publications/eucass-2025-nosecone-vae.html"
 }
 </script>
-</head><body class="uk-container uk-margin-large-top">
-<nav class="uk-breadcrumb"><ul class="uk-breadcrumb">
-<li><a href="/">Home</a></li><li><a href="/#publications">Publications</a></li><li><span>EUCASS (2025)</span></li>
-</ul></nav>
+</head>
+<body>
 
-<h1>Rapid Stagnation Heat Flux Prediction on Parametric Nose Cones in Hypersonic Flow via Variational Autoencoding</h1>
-<p class="uk-text-meta">EUCASS · July 2025 — <strong>H. A. Yaşar</strong>, O. K. Sevinc</p>
+<div class="hero">
+  <div class="uk-container">
+    <ul class="uk-breadcrumb uk-margin-small">
+      <li><a href="/">Home</a></li>
+      <li><a href="/#publications">Publications</a></li>
+      <li><span>EUCASS (2025)</span></li>
+    </ul>
+    <h1 class="paper-title uk-h2">Rapid Stagnation Heat Flux Prediction on Parametric Nose Cones in Hypersonic Flow via Variational Autoencoding</h1>
+    <div class="uk-margin-small-top"><span class="tag">Conference</span><span class="tag">2025</span> EUCASS — <strong>H. A. Yaşar</strong>, O. K. Sevinc</div>
+  </div>
+</div>
 
-<p><strong>Abstract</strong><br>…same abstract as meta…</p>
+<div class="uk-container uk-margin-top">
+  <div class="uk-grid-large" uk-grid>
+    <div class="uk-width-2-3@m">
+      <div class="uk-margin">
+        <a class="uk-button uk-button-primary" href="https://doi.org/10.13009/EUCASS2025-722" target="_blank" rel="noopener"><span uk-icon="link-external"></span> Publisher / DOI</a>
+        <a id="pdfBtn" class="uk-button uk-button-default"
+           data-pdf="/publications/EUCASS2025-722.pdf"
+           data-fallback="https://doi.org/10.13009/EUCASS2025-722"
+           target="_blank" rel="noopener"><span uk-icon="file-pdf"></span> PDF (author version)</a>
+      </div>
 
-<p class="uk-margin">
-  <a class="uk-button uk-button-primary" href="https://doi.org/10.13009/EUCASS2025-722" target="_blank" rel="noopener">Publisher / DOI</a>
-  <a class="uk-button uk-button-default" href="/assets/papers/eucass2025_nosecone_preprint.pdf" target="_blank" rel="noopener">PDF (author version)</a>
-  <a class="uk-button uk-button-default" href="/assets/bibtex/eucass2025_nosecone.bib" download>BibTeX</a>
-</p>
-</body></html>
+      <div class="box uk-margin">
+        <div class="uk-text-meta uk-margin-small-bottom">Abstract</div>
+        <p>Reliable prediction of stagnation-point heat flux is essential in hypersonic vehicle design, but high-fidelity CFD is expensive. We encode nose-cone geometries with a variational autoencoder (VAE) into a compact latent space and learn a conditional MLP mapping (latent, flight conditions) → heat-flux. The surrogate is accurate on a small subset of the design space and generalizes beyond training conditions, enabling rapid design evaluation with much lower computational cost.</p>
+      </div>
 
+      <div class="box citation uk-margin">
+        <div class="uk-text-meta uk-margin-small-bottom">Recommended citation</div>
+<pre id="cite">Yaşar, H. A., &amp; Sevinc, O. K. (2025). Rapid Stagnation Heat Flux Prediction on Parametric Nose Cones in Hypersonic Flow via Variational Autoencoding. <i>EUCASS</i>. https://doi.org/10.13009/EUCASS2025-722</pre>
+        <button class="uk-button uk-button-default uk-button-small copy-btn" onclick="copyText('cite')"><span uk-icon="copy"></span> Copy</button>
+      </div>
+
+      <div class="box bibtex uk-margin">
+        <div class="uk-text-meta uk-margin-small-bottom">BibTeX (quick copy)</div>
+<pre id="bib">@inproceedings{YasarSevinc2025EUCASS,
+  title     = {Rapid Stagnation Heat Flux Prediction on Parametric Nose Cones in Hypersonic Flow via Variational Autoencoding},
+  author    = {Yaşar, Hüseyin Avni and Sevinc, Oguz Kaan},
+  booktitle = {EUCASS},
+  year      = {2025},
+  doi       = {10.13009/EUCASS2025-722}
+}</pre>
+        <button class="uk-button uk-button-default uk-button-small copy-btn" onclick="copyText('bib')"><span uk-icon="copy"></span> Copy</button>
+      </div>
+    </div>
+
+    <div class="uk-width-1-3@m">
+      <div class="uk-card uk-card-default uk-card-body">
+        <h4 class="uk-card-title">Paper details</h4>
+        <div class="uk-text-meta">DOI</div>
+        <div><a href="https://doi.org/10.13009/EUCASS2025-722" target="_blank" rel="noopener">10.13009/EUCASS2025-722</a></div>
+        <div class="uk-text-meta uk-margin-small">Authors</div>
+        <div>Hüseyin Avni Yaşar, Oguz Kaan Sevinc</div>
+        <div class="uk-text-meta uk-margin-small">Event</div>
+        <div>EUCASS (Jul 2025)</div>
+        <div class="uk-text-meta uk-margin-small">Type</div>
+        <div>Conference Paper</div>
+        <div class="uk-text-meta uk-margin-small">ORCID</div>
+        <div><a href="https://orcid.org/0000-0002-8441-9161" target="_blank" rel="noopener">0000-0002-8441-9161</a></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="uk-margin-large-top">
+    <a href="/" class="uk-button uk-button-text"><span uk-icon="arrow-left"></span> Back to home</a>
+  </div>
+</div>
+
+<script>
+(function(){
+  var btn=document.getElementById('pdfBtn');
+  if(!btn) return;
+  var candidate=btn.getAttribute('data-pdf');
+  var fallback=btn.getAttribute('data-fallback');
+  btn.href=candidate; // you host this PDF
+  fetch(candidate,{method:'HEAD'}).then(function(res){
+    if(!res.ok){ btn.href=fallback; btn.innerHTML='<span uk-icon="file-pdf"></span> PDF (publisher)';}
+  }).catch(function(){ btn.href=fallback; btn.innerHTML='<span uk-icon="file-pdf"></span> PDF (publisher)';});
+})();
+function copyText(id){
+  var el=document.getElementById(id); if(!el) return;
+  navigator.clipboard.writeText(el.textContent).then(function(){
+    UIkit.notification({message:'Copied to clipboard',status:'success',timeout:1400});
+  });
+}
+</script>
+</body>
+</html>
