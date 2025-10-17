@@ -1,37 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <title>Machine Learning Engineer, Hüseyin Avni Yaşar</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="shortcut icon" href="images/avni_icon.png" />
-  <meta name="keywords" content="avniyasar, avni yasar, avni yaşar, hüseyin avni yaşar, huseyin avni yasar" />
-  <meta name="google-site-verification" content="dlpNyxq2xyYL_xYa8ADl0-NC9pW2raPkLhwax-m4gvs" />
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-X6T5P2Q0V3"></script>
   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-X6T5P2Q0V3');
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-X6T5P2Q0V3');
   </script>
 
-  <!-- UIkit + custom -->
+  <title>Machine Learning Engineer,Hüseyin Avni Yaşar</title>
+  <link rel="shortcut icon" href="images/avni_icon.png" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSS / JS (unchanged) -->
   <link rel="stylesheet" href="css/uikit.min.css" />
   <link rel="stylesheet" href="css/custom.css" />
   <script src="js/uikit.min.js"></script>
   <script src="js/uikit-icons.min.js"></script>
 
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,300italic,400italic,600italic,700,700italic,800,800italic" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Raleway:400,100,100italic,200italic,200,300,300italic,400italic,500,500italic,600,600italic,700,700italic,800,900,900italic" rel="stylesheet" />
+  <!-- Fonts (unchanged) -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,300italic,400italic,600italic,700,700italic,800,800italic" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,100,100italic,200italic,200,300,300italic,400italic,500,500italic,600,600italic,700italic,900italic,900,800,700,800italic" rel="stylesheet" type="text/css" />
 
-  <!-- Ads (optional / you already had) -->
+  <meta name="google-site-verification" content="dlpNyxq2xyYL_xYa8ADl0-NC9pW2raPkLhwax-m4gvs" />
+
+  <!-- Ads (unchanged) -->
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9736740410536152" crossorigin="anonymous"></script>
 
+  <meta name="keywords" content="avniyasar,avni yasar,avni yaşar,hüseyin avni yaşar,huseyin avni yasar" />
+
+  <!-- Keep your original small utility styles + restore cvskill visuals exactly -->
   <style>
-    body { font-family: "Open Sans", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; }
     .text-heading { font-size: 26px; font-weight: 700; }
     .text-heading-medium { font-size: 20px; font-weight: 700; }
     .text-size-1 { display:block; font-size:18px; color:#666; }
@@ -45,7 +48,16 @@
     .scroll-top { position:fixed; right:20px; bottom:20px; }
   </style>
 
-  <!-- Structured data: your publications list -->
+  <!-- === Skill bars (kept with your original class names & appearance) === -->
+  <style>
+    .cvskill { display: flex; align-items: center; }
+    .cvskill-name { width: 100px; font-size: 18px; font-weight: bold; text-align: left; }
+    .cvskill-bar { width: 0%; height: 15px; border-radius: 1px; background-color: #000; position: relative; }
+    .cvskill-years { color: #000; font-size: 18px; margin-left: 10px; text-align: right; }
+    .cvskill-bar-full { width: 100%; height: 15px; border-radius: 1px; background-color: #99FFFF; }
+  </style>
+
+  <!-- Structured data: publications list (adds indexing without changing visuals) -->
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -63,16 +75,17 @@
 
 <body>
 
-  <!-- MENU -->
+  <!-- ### MENU ###-->
   <div id="main-menu" class="uk-background-default" uk-sticky="show-on-up: true; animation: uk-animation-slide-top;">
     <div class="uk-container">
       <nav class="uk-navbar-container uk-navbar-transparent uk-background-default" uk-navbar="dropbar: true;">
         <div class="uk-navbar-left">
-          <a uk-scroll href="#home"><img id="logo_img" class="img-responsive center-block" src="images/avni_logo_classic.png" alt="H. A. Yaşar logo" width="280"></a>
+          <a uk-scroll href="#home"><img id="logo_img" class="img-responsive center-block" src="images/avni_logo_classic.png" alt="" width="280px"></a>
         </div>
         <div class="uk-navbar-right">
           <ul class="uk-navbar-nav uk-visible@m">
             <li><a href="#about" uk-scroll>About Me</a></li>
+            <!--<li><a href="#research" uk-scroll>Research</a></li>-->
             <li><a href="#publications" uk-scroll>Publications</a></li>
             <li><a href="#awards-honours" uk-scroll>Certificates</a></li>
             <li><a href="#contact-me" uk-scroll>Contact</a></li>
@@ -83,6 +96,7 @@
               <button class="uk-offcanvas-close" type="button" uk-close></button>
               <ul class="uk-nav uk-nav-default">
                 <li><a href="#about" uk-scroll>About Me</a></li>
+                <!--<li><a href="#research" uk-scroll>Research</a></li>-->
                 <li><a href="#publications" uk-scroll>Publications</a></li>
                 <li><a href="#awards-honours" uk-scroll>Certificates</a></li>
                 <li><a href="#contact-me" uk-scroll>Contact</a></li>
@@ -93,26 +107,28 @@
       </nav>
     </div>
   </div>
+  <!--end menu-->
 
-  <!-- HEADER -->
+  <!--#### HEADER ####-->
   <div class="uk-section uk-section-muted uk-section-large" id="home">
     <div class="uk-container">
       <div class="uk-flex uk-flex-center uk-flex-middle uk-grid-collapse" uk-grid>
         <div class="uk-card uk-card-body uk-text-center" style="width:400px;">
-          <img src="avni_image.jpeg" alt="Portrait of Hüseyin Avni Yaşar" uk-img />
+          <img src="avni_image.jpeg" uk-img />
         </div>
         <div class="uk-width-1-1@s uk-width-2-3@m uk-card uk-card-body uk-text-center uk-text-left@m">
           <span class="text-size-1">Machine Learning Engineer</span>
           <span class="text-size-2">Hüseyin Avni Yaşar</span>
           <span class="text-size-3 uk-margin-top">
-            M.S. in Computational & Applied Mathematics, Middle East Technical University (METU)
+            M.S Graduate of Computational and Applied Mathematics, Middle East Technical
+            University - METU<br>
           </span>
         </div>
       </div>
     </div>
-  </div>
+  </div><!-- end header-->
 
-  <!-- ABOUT -->
+  <!--#### ABOUT ME ####-->
   <div class="uk-section" id="about">
     <div class="uk-container">
       <div uk-grid>
@@ -122,25 +138,44 @@
         </div>
         <div class="uk-width-3-5@m uk-margin-large-bottom">
           <p>
-            Hüseyin Avni Yaşar was born in 1995. He received his B.Sc. in Mechanical Engineering (2018) and M.S. in Applied Mathematics (2023) from METU.
+            Hüseyin Avni Yaşar was born in 1995. Upon graduation from high school in Turkey, he was admitted to Mechanical Engineering program at METU where he received her B.Sc. degree in 2018 and his M.S degree in 2023 from Applied Mathematics Instite of METU.
           </p>
         </div>
 
         <div class="uk-clearfix"></div>
 
-        <!-- Job Experience -->
+        <!--job experiance-->
         <div class="uk-width-1-5@m uk-text-center uk-text-left@s">
           <span class="text-heading">Job Experience</span>
           <hr class="uk-divider-small">
         </div>
         <div class="uk-width-4-5@m uk-margin-large-bottom">
           <ul class="bullet-list">
-            <li><strong>Machine Learning Engineer</strong> — Roketsan (Aug 2020 – Present)</li>
-            <li><strong>System Design Engineer</strong> — Roketsan (Aug 2018 – Aug 2020)</li>
+            <li>
+              <div class="dates">
+                <span>August 2020</span> -
+                <span>Present</span>
+              </div>
+              <div class="content">
+                <h4>Machine Learning Engineer</h4><br>
+                <p>Roketsan</p>
+              </div>
+            </li>
+
+            <li>
+              <div class="dates">
+                <span>August 2018</span> -
+                <span>August 2020</span>
+              </div>
+              <div class="content">
+                <h4>System Design Engineer</h4><br>
+                <p>Roketsan</p>
+              </div>
+            </li>
           </ul>
         </div>
 
-        <!-- Education -->
+        <!--education-->
         <div class="uk-width-1-5@m uk-text-center uk-text-left@s">
           <span class="text-heading">Education</span>
           <hr class="uk-divider-small">
@@ -148,36 +183,104 @@
         <div class="uk-width-4-5@m">
           <ul class="bullet-list">
             <li>
-              <strong>Applied Mathematics (M.S.)</strong> — METU (Sep 2019 – Apr 2023)<br/>
-              Thesis: <i><a href="https://open.metu.edu.tr/bitstream/handle/11511/103028/MSc_Thesis_Avni_Yasar.pdf" target="_blank" rel="noopener">
-              Comparison of ANN-Based and Adaptive Quadratic NN-Based Multi-Fidelity Algorithms for Buckling Load Prediction of Stiffened Panels
-              </a></i>
+              <div class="dy">
+                <span class="year">September 2019 - April 2023</span>
+              </div>
+              <div class="content">
+                <h4>Applied Mathematics (M.S)</h4><br>
+                <p>Middle East Technical University</p> <br>
+                <p><i>Thesis :
+                  <a href="https://open.metu.edu.tr/bitstream/handle/11511/103028/MSc_Thesis_Avni_Yasar.pdf">Comparison of Artificial Neural Network-Based and Adaptive Quadratic Neural Network-Based Multi-Fidelity Algorithms for Buckling Load Prediction of Stiffened Panels</a>
+                </i></p>
+              </div>
             </li>
-            <li><strong>Mechanical Engineering (B.Sc.)</strong> — METU (Sep 2013 – Jun 2018)</li>
+            <li>
+              <div class="dy">
+                <span class="year">September 2013 - June 2018</span>
+              </div>
+              <div class="content">
+                <h4>Mechanical Engineering (B.Sc)</h4><br>
+                <p>Middle East Technical University</p>
+              </div>
+            </li>
           </ul>
         </div>
 
-        <!-- Personal qualities (kept brief) -->
         <div class="uk-width-1-5@m uk-text-center uk-text-left@s">
           <span class="text-heading">Personal Qualities</span>
           <hr class="uk-divider-small">
         </div>
         <div class="uk-width-4-5@m uk-margin-large-bottom">
           <ul class="bullet-list">
-            <li>Highly motivated, team-oriented, and proactive</li>
-            <li>Strong communication; eager to learn and tackle new challenges</li>
+            <li>Highly motivated and ambitious</li>
+            <li>Always eager to learn and take on new challenges</li>
+            <li>Enjoy working in a team environment</li>
+            <li>Committed to achieving project goals and objectives</li>
+            <li>Excellent communication skills</li>
           </ul>
         </div>
+
+        <!-- Skills (kept and styled as in your original) -->
+        <div class="uk-width-1-5@m uk-text-center uk-text-left@s">
+          <span class="text-heading">Skills</span>
+          <hr class="uk-divider-small">
+        </div>
+        <div class="uk-width-4-5@m uk-margin-large-bottom">
+          <ul class="bullet-list">
+            <li class="cvskill">
+              <span class="cvskill-name">Python</span>
+              <span class="cvskill-bar" style="width: 80%; float: right;"></span>
+              <span class="cvskill-years">6+ Yrs.</span>
+            </li>
+            <li class="cvskill">
+              <span class="cvskill-name">Pytorch</span>
+              <span class="cvskill-bar" style="width: 60%; float: right;"></span>
+              <span class="cvskill-bar-full" style="width: 20%;"></span>
+              <span class="cvskill-years">5+ Yrs.</span>
+            </li>
+            <li class="cvskill">
+              <span class="cvskill-name">Tensorflow</span>
+              <span class="cvskill-bar" style="width: 60%; float: right;"></span>
+              <span class="cvskill-bar-full" style="width: 20%;"></span>
+              <span class="cvskill-years">5+ Yrs.</span>
+            </li>
+            <li class="cvskill">
+              <span class="cvskill-name">Linux</span>
+              <span class="cvskill-bar" style="width: 50%; float: right;"></span>
+              <span class="cvskill-bar-full" style="width: 30%;"></span>
+              <span class="cvskill-years">4+ Yrs.</span>
+            </li>
+            <li class="cvskill">
+              <span class="cvskill-name">MATLAB</span>
+              <span class="cvskill-bar" style="width: 80%; float: right;"></span>
+              <span class="cvskill-years">6+ Yrs.</span>
+            </li>
+            <li class="cvskill">
+              <span class="cvskill-name">Julia</span>
+              <span class="cvskill-bar" style="width: 20%; float: right;"></span>
+              <span class="cvskill-bar-full" style="width: 60%;"></span>
+              <span class="cvskill-years">2+ Yrs.</span>
+            </li>
+          </ul>
+        </div>
+
       </div>
     </div>
   </div>
+  <!--end about me-->
 
   <hr class="uk-divider-icon">
 
-  <!-- PUBLICATIONS -->
+  <!--#### PUBLICATIONS  ####-->
   <div class="uk-section" id="publications">
-    <div class="return-top uk-padding-large uk-padding-remove-vertical" uk-sticky="offset: 70vh;bottom: #book-chapters">
-      <div><a href="#publications" class="uk-link-reset uk-block text-rotate" uk-scroll>Publications <span class="text-rotate" uk-icon="icon: triangle-up"></span></a></div>
+
+    <div class="return-top uk-padding-large uk-padding-remove-vertical"
+         uk-sticky="offset: 70vh;bottom: #book-chapters">
+      <div>
+        <a href="#publications" class="uk-link-reset uk-block text-rotate" uk-scroll>
+          Publications <span class="text-rotate" uk-icon="icon: triangle-up"></span>
+        </a>
+      </div>
     </div>
 
     <div class="uk-container">
@@ -189,59 +292,68 @@
         <div class="uk-width-4-5@m uk-grid-match uk-text-center" uk-grid>
           <div class="uk-width-1-3@m uk-width-1-2">
             <a href="#journal-papers" class="uk-card-hover uk-card uk-card-default uk-card-body uk-link-reset" uk-scroll>
-              <div class="uk-card-media-top"><img src="images/journal.svg" width="55" alt="Journal icon"/></div>
+              <div class="uk-card-media-top"><img src="images/journal.svg" width="55" /></div>
               <div class="uk-margin-small-top color-2">Journal Papers</div>
             </a>
           </div>
+
           <div class="uk-width-1-3@m uk-width-1-2">
-            <a href="#conference-papers" class="uk-card-hover uk-card uk-card-default uk-card-body uk-link-reset" uk-scroll>
-              <div class="uk-card-media-top"><img src="images/conferance.svg" width="55" alt="Conference icon"/></div>
+            <a href="#conferance-papers" class="uk-card-hover uk-card uk-card-default uk-card-body uk-link-reset" uk-scroll>
+              <div class="uk-card-media-top"><img src="images/conferance.svg" width="55" /></div>
               <div class="uk-margin-small-top color-5">Conference Papers</div>
             </a>
           </div>
         </div>
       </div>
 
-      <!-- Journal -->
+      <!-- journal papers -->
       <div id="journal-papers" class="uk-margin-large-bottom" uk-grid>
         <div class="uk-width-1-5@m uk-text-center uk-text-left@s">
-          <div><img src="images/journal.svg" width="55" alt="" uk-img /></div>
+          <div><img src="images/journal.svg" width="55" uk-img /></div>
           <div class="text-heading-medium uk-margin-top color-2">Journal Papers</div>
           <hr class="uk-divider-small">
         </div>
         <div class="uk-width-4-5@m" uk-grid>
           <div class="uk-width-1-1">
 
-            <!-- AIAA Journal -->
-            <div class="item mix jpaper box-purple" data-year="2024">
-              <div class="pubmain">
-                <h4 class="pubtitle">
-                  <a href="/publications/aiaa-journal-2024-adaptive-quad-mf.html">
-                    Adaptive-Quadratic-Neural-Network-Based Multifidelity Modeling Approach for Buckling of Stiffened Panels
-                  </a>
-                </h4>
-                <div class="pubauthor"><strong>Hüseyin Avni Yaşar</strong> and Ercan Gürses</div>
-                <div class="pubcite">AIAA Journal, Sep 2024</div>
-                <div class="uk-margin-small-top">
-                  <a class="uk-button uk-button-default uk-button-small" href="#modal-aiaa-2024" uk-toggle>View details</a>
-                  <a class="uk-button uk-button-text uk-button-small" href="https://doi.org/10.2514/1.J064064" target="_blank" rel="noopener">DOI</a>
-                </div>
-              </div>
-            </div>
+            <div class="filter clearfix">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="filter-content">
 
-            <!-- Applied Optics -->
-            <div class="item mix jpaper box-purple" data-year="2024">
-              <div class="pubmain">
-                <h4 class="pubtitle">
-                  <a href="/publications/applied-optics-2024-cn2-qfnn.html">
-                    Estimation of Ground-Based Atmospheric Turbulence Strength (Cn2) by Novel Neural Network Architecture
-                  </a>
-                </h4>
-                <div class="pubauthor">Uğurcan Çelik and <strong>Hüseyin Avni Yaşar</strong></div>
-                <div class="pubcite">Applied Optics, Oct 2024</div>
-                <div class="uk-margin-small-top">
-                  <a class="uk-button uk-button-default uk-button-small" href="#modal-ao-2024" uk-toggle>View details</a>
-                  <a class="uk-button uk-button-text uk-button-small" href="https://doi.org/10.1364/AO.532723" target="_blank" rel="noopener">DOI</a>
+                    <div class="item mix jpaper box-purple" data-year="2024">
+                      <div class="pubmain">
+                        <h4 class="pubtitle">
+                          <a href="/publications/aiaa-journal-2024-adaptive-quad-mf.html">
+                            Adaptive-Quadratic-Neural-Network-Based Multifidelity Modeling Approach for Buckling of Stiffened Panels
+                          </a>
+                        </h4>
+                        <div class="pubauthor"><strong>Hüseyin Avni Yaşar</strong> and Ercan Gürses </div>
+                        <div class="pubcite">AIAA Journal, Sep 2024 </div>
+                        <div class="uk-margin-small-top">
+                          <a class="uk-button uk-button-default uk-button-small" href="#modal-aiaa-2024" uk-toggle>View details</a>
+                          <a class="uk-button uk-button-text uk-button-small" href="https://doi.org/10.2514/1.J064064" target="_blank" rel="noopener">DOI</a>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="item mix jpaper box-purple" data-year="2024">
+                      <div class="pubmain">
+                        <h4 class="pubtitle">
+                          <a href="/publications/applied-optics-2024-cn2-qfnn.html">
+                            Estimation of Ground-Based Atmospheric Turbulence Strength (Cn2) by Novel Neural Network Architecture
+                          </a>
+                        </h4>
+                        <div class="pubauthor">Uğurcan Çelik and <strong>Hüseyin Avni Yaşar</strong></div>
+                        <div class="pubcite">Applied Optics, Oct 2024 </div>
+                        <div class="uk-margin-small-top">
+                          <a class="uk-button uk-button-default uk-button-small" href="#modal-ao-2024" uk-toggle>View details</a>
+                          <a class="uk-button uk-button-text uk-button-small" href="https://doi.org/10.1364/AO.532723" target="_blank" rel="noopener">DOI</a>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div><!-- filter-content -->
                 </div>
               </div>
             </div>
@@ -250,17 +362,16 @@
         </div>
       </div>
 
-      <!-- Conference -->
-      <div id="conference-papers" class="uk-margin-large-bottom" uk-grid>
+      <!-- conferance (kept original id spelling) -->
+      <div id="conferance-papers" class="uk-margin-large-bottom" uk-grid>
         <div class="uk-width-1-5@m uk-text-center uk-text-left@s">
-          <div><img src="images/conferance.svg" width="55" alt="" uk-img /></div>
+          <div><img src="images/conferance.svg" width="55" uk-img /></div>
           <div class="text-heading-medium uk-margin-top color-5">Conference Papers</div>
           <hr class="uk-divider-small">
         </div>
         <div class="uk-width-4-5@m" uk-grid>
           <div class="uk-width-1-1">
 
-            <!-- AIAA Aviation -->
             <div class="item mix cpaper box-green" data-year="2024">
               <div class="pubmain">
                 <h4 class="pubtitle">
@@ -269,7 +380,9 @@
                   </a>
                 </h4>
                 <div class="pubauthor"><strong>Hüseyin Avni Yaşar</strong> and Oguz Kaan Sevinc</div>
-                <div class="pubcite"><span class="label label-warning">AIAA Aviation Forum, July 2024</span></div>
+                <div class="pubcite"><span class="label label-warning">
+                    AIAA Aviation Forum, July 2024
+                </span></div>
                 <div class="uk-margin-small-top">
                   <a class="uk-button uk-button-default uk-button-small" href="#modal-aiaa-aviation-2024" uk-toggle>View details</a>
                   <a class="uk-button uk-button-text uk-button-small" href="https://doi.org/10.2514/6.2024-4203" target="_blank" rel="noopener">DOI</a>
@@ -277,7 +390,6 @@
               </div>
             </div>
 
-            <!-- EUCASS -->
             <div class="item mix cpaper box-green" data-year="2025">
               <div class="pubmain">
                 <h4 class="pubtitle">
@@ -286,7 +398,9 @@
                   </a>
                 </h4>
                 <div class="pubauthor"><strong>Hüseyin Avni Yaşar</strong> and Oguz Kaan Sevinc</div>
-                <div class="pubcite"><span class="label label-warning">EUCASS, July 2025</span></div>
+                <div class="pubcite"><span class="label label-warning">
+                    EUCASS, July 2025
+                </span></div>
                 <div class="uk-margin-small-top">
                   <a class="uk-button uk-button-default uk-button-small" href="#modal-eucass-2025" uk-toggle>View details</a>
                   <a class="uk-button uk-button-text uk-button-small" href="https://doi.org/10.13009/EUCASS2025-722" target="_blank" rel="noopener">DOI</a>
@@ -298,94 +412,148 @@
         </div>
       </div>
 
-    </div>
-  </div>
+      <!-- ==== MODALS (kept) ==== -->
+      <div id="modal-aiaa-2024" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body">
+          <button class="uk-modal-close-default" type="button" uk-close></button>
+          <h3 class="uk-modal-title">Adaptive-Quadratic-Neural-Network-Based Multifidelity Modeling Approach for Buckling of Stiffened Panels</h3>
+          <p class="uk-text-meta">AIAA Journal · Sep 2024 — <strong>H. A. Yaşar</strong>, E. Gürses</p>
 
-  <!-- MODALS (simple, AVESIS-like) -->
-  <!-- AIAA Journal -->
-  <div id="modal-aiaa-2024" uk-modal>
-    <div class="uk-modal-dialog uk-modal-body">
-      <button class="uk-modal-close-default" type="button" uk-close></button>
-      <h3 class="uk-modal-title">Adaptive-Quadratic-Neural-Network-Based Multifidelity Modeling Approach for Buckling of Stiffened Panels</h3>
-      <p class="uk-text-meta">AIAA Journal · Sep 2024 — <strong>H. A. Yaşar</strong>, E. Gürses</p>
-      <p><strong>Abstract</strong><br>
-        This paper presents a method for predicting the buckling load of stiffened panels using multifidelity modeling based on quadratic neural networks (QNNs) with adaptive activation functions…
-      </p>
-      <div class="uk-margin">
-        <a class="uk-button uk-button-primary" href="https://doi.org/10.2514/1.J064064" target="_blank" rel="noopener">Publisher / DOI</a>
-        <!-- smart PDF: local OR DOI -->
-        <a class="uk-button uk-button-default pdfBtn"
-           data-pdf="/publications/adaptive-quadratic-neural-network-based-multifidelity-modeling-approach-for-buckling-of-stiffened-panels.pdf"
-           data-fallback="https://doi.org/10.2514/1.J064064"
-           target="_blank" rel="noopener">PDF</a>
-        <a class="uk-button uk-button-default" href="/assets/bibtex/aiaa_aiaaj62_4207.bib" download>BibTeX</a>
+          <p>
+            <strong>Abstract</strong><br>
+            We compare ANN-based and adaptive quadratic neural network-based multi-fidelity approaches for predicting buckling loads of stiffened panels, focusing on accuracy vs. data/training cost…
+          </p>
+
+          <div class="uk-margin">
+            <a class="uk-button uk-button-primary" href="https://doi.org/10.2514/1.J064064" target="_blank" rel="noopener">
+              Publisher / DOI
+            </a>
+            <!-- Smart PDF link: local if exists, else DOI -->
+            <a class="uk-button uk-button-default pdfBtn"
+               data-pdf="/publications/adaptive-quadratic-neural-network-based-multifidelity-modeling-approach-for-buckling-of-stiffened-panels.pdf"
+               data-fallback="https://doi.org/10.2514/1.J064064"
+               target="_blank" rel="noopener">PDF</a>
+            <a class="uk-button uk-button-default" href="/assets/bibtex/aiaa_aiaaj62_4207.bib" download>
+              BibTeX
+            </a>
+            <button class="uk-button uk-button-text" onclick="copyBibtex('bib-aiaa-2024')">Copy BibTeX</button>
+          </div>
+
+          <pre id="bib-aiaa-2024" style="white-space:pre-wrap; word-wrap:break-word; display:none;">
+@article{YasarGurses2024AIAA,
+  title = {Adaptive-Quadratic-Neural-Network-Based Multifidelity Modeling Approach for Buckling of Stiffened Panels},
+  author = {Yaşar, H. A. and Gürses, E.},
+  journal = {AIAA Journal},
+  year = {2024},
+  doi = {10.2514/1.J064064}
+}
+          </pre>
+        </div>
       </div>
-    </div>
-  </div>
 
-  <!-- Applied Optics -->
-  <div id="modal-ao-2024" uk-modal>
-    <div class="uk-modal-dialog uk-modal-body">
-      <button class="uk-modal-close-default" type="button" uk-close></button>
-      <h3 class="uk-modal-title">Estimation of Ground-Based Atmospheric Turbulence Strength (Cn2) by Novel Neural Network Architecture</h3>
-      <p class="uk-text-meta">Applied Optics · Oct 2024 — U. Çelik, <strong>H. A. Yaşar</strong></p>
-      <p><strong>Abstract</strong><br>
-        Estimating the atmospheric turbulence strength (Cn2) is crucial for optical wave propagation… our QFNN estimates site-specific Cn2 and achieves R² ≈ 0.92 on experimental data.
-      </p>
-      <div class="uk-margin">
-        <a class="uk-button uk-button-primary" href="https://doi.org/10.1364/AO.532723" target="_blank" rel="noopener">Publisher / DOI</a>
-        <a class="uk-button uk-button-default pdfBtn"
-           data-pdf="/publications/Estimation_of_ground-based_atmospheric_turbulence_.pdf"
-           data-fallback="https://doi.org/10.1364/AO.532723"
-           target="_blank" rel="noopener">PDF</a>
-        <a class="uk-button uk-button-default" href="/assets/bibtex/ao-63-28-7402.bib" download>BibTeX</a>
+      <div id="modal-ao-2024" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body">
+          <button class="uk-modal-close-default" type="button" uk-close></button>
+          <h3 class="uk-modal-title">Estimation of Ground-Based Atmospheric Turbulence Strength (Cn2) by Novel Neural Network Architecture</h3>
+          <p class="uk-text-meta">Applied Optics · Oct 2024 — U. Çelik, <strong>H. A. Yaşar</strong></p>
+
+          <p><strong>Abstract</strong><br>
+            A compact learning pipeline estimates near-ground Cn² from standard meteorological features and ancillary signals, targeting practical deployment with improved accuracy and stability over baseline regressors.
+          </p>
+
+          <div class="uk-margin">
+            <a class="uk-button uk-button-primary" href="https://doi.org/10.1364/AO.532723" target="_blank" rel="noopener">Publisher / DOI</a>
+            <a class="uk-button uk-button-default pdfBtn"
+               data-pdf="/publications/Estimation_of_ground-based_atmospheric_turbulence_.pdf"
+               data-fallback="https://doi.org/10.1364/AO.532723"
+               target="_blank" rel="noopener">PDF</a>
+            <a class="uk-button uk-button-default" href="/assets/bibtex/ao-63-28-7402.bib" download>BibTeX</a>
+            <button class="uk-button uk-button-text" onclick="copyBibtex('bib-ao-2024')">Copy BibTeX</button>
+          </div>
+
+          <pre id="bib-ao-2024" style="white-space:pre-wrap; word-wrap:break-word; display:none;">
+@article{CelikYasar2024AO,
+  title   = {Estimation of Ground-Based Atmospheric Turbulence Strength (Cn2) by Novel Neural Network Architecture},
+  author  = {Çelik, Uğurcan and Yaşar, Hüseyin Avni},
+  journal = {Applied Optics},
+  year    = {2024},
+  doi     = {10.1364/AO.532723}
+}
+          </pre>
+        </div>
       </div>
-    </div>
-  </div>
 
-  <!-- AIAA Aviation -->
-  <div id="modal-aiaa-aviation-2024" uk-modal>
-    <div class="uk-modal-dialog uk-modal-body">
-      <button class="uk-modal-close-default" type="button" uk-close></button>
-      <h3 class="uk-modal-title">Physics Informed Neural Networks for Enhanced Critical Heat Flux Prediction in Hypersonic Flows</h3>
-      <p class="uk-text-meta">AIAA Aviation Forum · July 2024 — <strong>H. A. Yaşar</strong>, O. K. Sevinc</p>
-      <p><strong>Abstract</strong><br>
-        We evaluate PINNs against conventional CFD for stagnation-point heat flux on a blunt-nosed body; PINNs achieve large speedups with comparable accuracy…
-      </p>
-      <div class="uk-margin">
-        <a class="uk-button uk-button-primary" href="https://doi.org/10.2514/6.2024-4203" target="_blank" rel="noopener">Publisher / DOI</a>
-        <!-- recommend renaming the file to ASCII; if absent, button falls back to DOI -->
-        <a class="uk-button uk-button-default pdfBtn"
-           data-pdf="/publications/yasar-sevinc-2024-pinn-chf.pdf"
-           data-fallback="https://doi.org/10.2514/6.2024-4203"
-           target="_blank" rel="noopener">PDF</a>
-        <a class="uk-button uk-button-default" href="/assets/bibtex/aiaa_6.2024-4203.bib" download>BibTeX</a>
+      <div id="modal-aiaa-aviation-2024" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body">
+          <button class="uk-modal-close-default" type="button" uk-close></button>
+          <h3 class="uk-modal-title">Physics Informed Neural Networks for Enhanced Critical Heat Flux Prediction in Hypersonic Flows</h3>
+          <p class="uk-text-meta">AIAA Aviation Forum · July 2024 — <strong>H. A. Yaşar</strong>, O. K. Sevinc</p>
+
+          <p><strong>Abstract</strong><br>
+            We embed governing-equation terms into a PINN formulation to predict critical heat-flux on an axisymmetric blunt body across Mach/altitude conditions, achieving accuracy comparable to CFD with markedly reduced runtime.
+          </p>
+
+          <div class="uk-margin">
+            <a class="uk-button uk-button-primary" href="https://doi.org/10.2514/6.2024-4203" target="_blank" rel="noopener">Publisher / DOI</a>
+            <a class="uk-button uk-button-default pdfBtn"
+               data-pdf="/publications/yasar-sevinc-2024-pinn-chf.pdf"
+               data-fallback="https://doi.org/10.2514/6.2024-4203"
+               target="_blank" rel="noopener">PDF</a>
+            <a class="uk-button uk-button-default" href="/assets/bibtex/aiaa_6.2024-4203.bib" download>BibTeX</a>
+            <button class="uk-button uk-button-text" onclick="copyBibtex('bib-aiaa-aviation-2024')">Copy BibTeX</button>
+          </div>
+
+          <pre id="bib-aiaa-aviation-2024" style="white-space:pre-wrap; word-wrap:break-word; display:none;">
+@inproceedings{YasarSevinc2024AIAA,
+  title     = {Physics Informed Neural Networks for Enhanced Critical Heat Flux Prediction in Hypersonic Flows},
+  author    = {Yaşar, Hüseyin Avni and Sevinc, Oguz Kaan},
+  booktitle = {AIAA Aviation Forum},
+  year      = {2024},
+  doi       = {10.2514/6.2024-4203}
+}
+          </pre>
+        </div>
       </div>
-    </div>
-  </div>
 
-  <!-- EUCASS -->
-  <div id="modal-eucass-2025" uk-modal>
-    <div class="uk-modal-dialog uk-modal-body">
-      <button class="uk-modal-close-default" type="button" uk-close></button>
-      <h3 class="uk-modal-title">Rapid Stagnation Heat Flux Prediction on Parametric Nose Cones in Hypersonic Flow via Variational Autoencoding</h3>
-      <p class="uk-text-meta">EUCASS · July 2025 — <strong>H. A. Yaşar</strong>, O. K. Sevinc</p>
-      <p><strong>Abstract</strong><br>
-        VAE encodes geometry to a compact latent; a conditional MLP maps latent + flight conditions to stagnation-point heat flux, enabling rapid predictions beyond training conditions…
-      </p>
-      <div class="uk-margin">
-        <a class="uk-button uk-button-primary" href="https://doi.org/10.13009/EUCASS2025-722" target="_blank" rel="noopener">Publisher / DOI</a>
-        <a class="uk-button uk-button-default pdfBtn"
-           data-pdf="/publications/EUCASS2025-722.pdf"
-           data-fallback="https://doi.org/10.13009/EUCASS2025-722"
-           target="_blank" rel="noopener">PDF</a>
-        <a class="uk-button uk-button-default" href="/assets/bibtex/eucass2025_nosecone.bib" download>BibTeX</a>
+      <div id="modal-eucass-2025" uk-modal>
+        <div class="uk-modal-dialog uk-modal-body">
+          <button class="uk-modal-close-default" type="button" uk-close></button>
+          <h3 class="uk-modal-title">Rapid Stagnation Heat Flux Prediction on Parametric Nose Cones in Hypersonic Flow via Variational Autoencoding</h3>
+          <p class="uk-text-meta">EUCASS · July 2025 — <strong>H. A. Yaşar</strong>, O. K. Sevinc</p>
+
+        <p><strong>Abstract</strong><br>
+          A VAE encodes 2D nose-cone geometries to a compact latent; a conditional MLP maps latent + flight conditions to heat-flux, delivering fast inference on thousands of cases with strong generalization to holdout geometries.
+        </p>
+
+        <div class="uk-margin">
+          <a class="uk-button uk-button-primary" href="https://doi.org/10.13009/EUCASS2025-722" target="_blank" rel="noopener">Publisher / DOI</a>
+          <a class="uk-button uk-button-default pdfBtn"
+             data-pdf="/publications/EUCASS2025-722.pdf"
+             data-fallback="https://doi.org/10.13009/EUCASS2025-722"
+             target="_blank" rel="noopener">PDF</a>
+          <a class="uk-button uk-button-default" href="/assets/bibtex/eucass2025_nosecone.bib" download>BibTeX</a>
+          <button class="uk-button uk-button-text" onclick="copyBibtex('bib-eucass-2025')">Copy BibTeX</button>
+        </div>
+
+        <pre id="bib-eucass-2025" style="white-space:pre-wrap; word-wrap:break-word; display:none;">
+@inproceedings{YasarSevinc2025EUCASS,
+  title     = {Rapid Stagnation Heat Flux Prediction on Parametric Nose Cones in Hypersonic Flow via Variational Autoencoding},
+  author    = {Yaşar, Hüseyin Avni and Sevinc, Oguz Kaan},
+  booktitle = {EUCASS},
+  year      = {2025},
+  doi       = {10.13009/EUCASS2025-722}
+}
+        </pre>
+        </div>
       </div>
-    </div>
-  </div>
 
-  <!-- Certificates -->
+    </div><!-- end container -->
+  </div>
+  <!--end publications end-->
+
   <hr class="uk-divider-icon">
+
+  <!--#### AWARDS & HONOURS  ####-->
   <div class="uk-section" id="awards-honours">
     <div class="uk-container">
       <div class="uk-margin-xlarge" uk-grid>
@@ -393,24 +561,35 @@
           <span class="text-heading">Certificates</span>
           <hr class="uk-divider-small">
         </div>
+        <div class="uk-width-4-5@m uk-grid-match uk-text-center" uk-grid>
+          <div class="uk-width-1-3@m uk-width-1-2">
+            <a href="#honour-awards" class="uk-card-hover uk-card uk-card-default uk-card-body uk-link-reset" uk-scroll>
+              <div class="uk-card-media-top">
+                <img src="images/honour_awards.svg" width="55" />
+              </div>
+              <div class="uk-margin-small-top color-4">Certificates</div>
+            </a>
+          </div>
+        </div>
       </div>
 
-      <div id="honour-awards" uk-grid>
+      <!-- honour awards-->
+      <div id="honour-awards" class="" uk-grid>
         <div class="uk-width-1-5@m uk-text-center uk-text-left@s">
-          <div><img src="images/honour_awards.svg" width="55" alt="" uk-img /></div>
+          <div> <img src="images/honour_awards.svg" width="55" uk-img /></div>
           <div class="text-heading-medium uk-margin-top color-4">Certificates</div>
           <hr class="uk-divider-small">
         </div>
         <div class="uk-width-4-5@m" uk-grid>
           <div class="uk-width-1-1">
             <ul class="bullet-list">
-              <li>MIT Schwarzman College of Computing — Data Science and Machine Learning: Making Data-Driven Decisions — <a href="https://olympus1.mygreatlearning.com/certificate/CRZNLWON" target="_blank" rel="noopener">CRZNLWON</a> (Jan 2023)</li>
-              <li>Google — Crash Course on Python — <a href="https://www.coursera.org/account/accomplishments/certificate/XCVYJB36UUVG" target="_blank" rel="noopener">XCVYJB36UUVG</a> (Apr 2021)</li>
-              <li>Wesleyan — Python Programming: A Concise Introduction — <a href="https://www.coursera.org/account/accomplishments/certificate/4GA4H7A5LSEY" target="_blank" rel="noopener">4GA4H7A5LSEY</a> (Mar 2018)</li>
-              <li>UMich — Programming for Everybody — <a href="https://www.coursera.org/account/accomplishments/certificate/JXT5EFZLRZTH" target="_blank" rel="noopener">JXT5EFZLRZTH</a> (Feb 2018)</li>
-              <li>Rice — Python Data Representations — <a href="https://www.coursera.org/account/accomplishments/certificate/ZHQQH4FV4W2W" target="_blank" rel="noopener">ZHQQH4FV4W2W</a> (Feb 2018)</li>
-              <li>UMich — Python Data Structures — <a href="https://www.coursera.org/account/accomplishments/certificate/LJCB247UBT33" target="_blank" rel="noopener">LJCB247UBT33</a> (Feb 2018)</li>
-              <li>Rice — Python Programming Essentials — <a href="https://www.coursera.org/account/accomplishments/certificate/UKD7Z8ATRRUG" target="_blank" rel="noopener">UKD7Z8ATRRUG</a> (Feb 2018)</li>
+              <li>MIT Schwarzman College of Computing - Data Science and Machine Learning: Making Data-Driven Decisions: Credential ID <a href="https://olympus1.mygreatlearning.com/certificate/CRZNLWON">CRZNLWON</a>, Issued Jan 2023. </li>
+              <li>Google - Crash Course on Python: Credential ID <a href="https://www.coursera.org/account/accomplishments/certificate/XCVYJB36UUVG">XCVYJB36UUVG</a>, Issued  Apr 2021. </li>
+              <li>Wesleyan University - Python Programming: A Concise Introduction: Credential ID <a href="https://www.coursera.org/account/accomplishments/certificate/4GA4H7A5LSEY">4GA4H7A5LSEY</a>, Issued Mar 2018. </li>
+              <li>University of Michigan - Programming for Everybody (Getting Started with Python): Credential ID <a href="https://www.coursera.org/account/accomplishments/certificate/JXT5EFZLRZTH">JXT5EFZLRZTH</a>, Issued Feb 2018. </li>
+              <li>Rice University - Python Data Representations: Credential ID <a href="https://www.coursera.org/account/accomplishments/certificate/ZHQQH4FV4W2W">ZHQQH4FV4W2W</a>, Issued Feb 2018. </li>
+              <li>University of Michigan - Python Data Structures: Credential ID <a href="https://www.coursera.org/account/accomplishments/certificate/LJCB247UBT33">LJCB247UBT33</a>, Issued Feb 2018. </li>
+              <li>Rice University - Python Programming Essentials: Credential ID <a href="https://www.coursera.org/account/accomplishments/certificate/UKD7Z8ATRRUG">UKD7Z8ATRRUG</a>, Issued Feb 2018. </li>
             </ul>
           </div>
         </div>
@@ -418,13 +597,15 @@
 
     </div>
   </div>
+  <!--end awards end-->
 
-  <!-- CONTACT -->
   <hr class="uk-divider-icon">
+
+  <!--#### CONTACT ME ####-->
   <div class="uk-section" id="contact-me">
     <div class="uk-container">
       <div uk-grid>
-        <div class="uk-width-1-5@m uk-text-center uk-text-left@s">
+        <div class="uk-width-1-5@m uk-text-center uk-text-left@s ">
           <span class="text-heading">Contact Me</span>
           <hr class="uk-divider-small">
         </div>
@@ -432,34 +613,42 @@
           <p>
             <span class="text-heading-medium">Hüseyin Avni Yaşar</span>
             <span class="text-size-3">Machine Learning Engineer</span><br>
+            <span class="uk-margin-small-right" uk-icon="icon: home"></span> Roketsan Inc.<br>
+
             <span class="uk-margin-small-right" uk-icon="icon: mail"></span>
-            <a href="mailto:yasarr.avni@gmail.com">yasarr.avni@gmail.com</a><br>
-            <a href="https://www.linkedin.com/in/huseyin-avni-yasar/" target="_blank" rel="noopener">
-              <span class="uk-margin-small-right" uk-icon="linkedin"></span>Hüseyin Avni Yaşar
+            <span><a href="mailto:yasarr.avni@gmail.com">yasarr.avni@gmail.com</a></span><br>
+
+            <a href="https://www.linkedin.com/in/huseyin-avni-yasar/" target="_blank">
+              <span class="uk-margin-small-right" uk-icon="linkedin"></span>
+              <span>Hüseyin Avni Yaşar</span><br>
             </a>
-          </p>
-          <p>
-            Check out my research on
-            <a href="https://bit.ly/huseyin-avni-yasar" target="_blank" rel="noopener">Google Scholar</a>
+
+            <p>Check out my research on <a href="https://bit.ly/huseyin-avni-yasar" target="_blank">
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-square fa-stack-2x"></i>
+                <i class="ai ai-google-scholar ai-2x fa-stack-1x fa-inverse"></i>
+              </span>Google Scholar</a></p>
+
           </p>
         </div>
       </div>
     </div>
   </div>
+  <!--end contact me-->
 
-  <a href="#home" class="scroll-top" uk-scroll><span class="uk-margin-small-right" uk-icon="icon: chevron-up;ratio:1.5"></span></a>
+  <a href="#home" class="scroll-top" uk-scroll>
+    <span class="uk-margin-small-right" uk-icon="icon: chevron-up;ratio:1.5"></span>
+  </a>
 
-  <!-- Smart PDF buttons (works on GitHub Pages; for local testing use http://localhost server) -->
+  <!-- Smart PDF buttons (GitHub Pages; for local testing use http://localhost) -->
   <script>
     (function () {
       var btns = document.querySelectorAll('.pdfBtn');
       btns.forEach(function(btn){
         var candidate = btn.getAttribute('data-pdf');
         var fallback  = btn.getAttribute('data-fallback');
-        // default to fallback (DOI)
         btn.href = fallback;
         btn.textContent = 'PDF (publisher)';
-        // try local PDF
         fetch(candidate, { method: 'HEAD' })
           .then(function(res){
             if (res.ok) {
@@ -470,15 +659,24 @@
           .catch(function(){ /* keep fallback */ });
       });
     })();
+
+    function copyBibtex(id){
+      const el = document.getElementById(id);
+      if(!el) return;
+      const txt = el.textContent;
+      navigator.clipboard.writeText(txt).then(()=> {
+        UIkit.notification({message: 'BibTeX copied', status: 'success', timeout: 1500});
+      }).catch(()=> { alert('Copy failed.'); });
+    }
   </script>
 
-  <!-- Statcounter (optional) -->
+  <!-- Statcounter (unchanged) -->
   <script type="text/javascript">
     var sc_project=13020198; 
     var sc_invisible=1; 
     var sc_security="53e64bc2"; 
   </script>
-  <script async src="https://www.statcounter.com/counter/counter.js"></script>
+  <script type="text/javascript" src="https://www.statcounter.com/counter/counter.js" async></script>
   <noscript><div class="statcounter"><a title="Web Analytics" href="https://statcounter.com/" target="_blank"><img class="statcounter" src="https://c.statcounter.com/13020198/0/53e64bc2/1/" alt="Web Analytics" referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
 
 </body>
