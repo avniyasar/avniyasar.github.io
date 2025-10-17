@@ -1,31 +1,69 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
 <meta charset="utf-8">
 <title>Adaptive-Quadratic-Neural-Network-Based Multifidelity Modeling — AIAA Journal (2024)</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="AIAA Journal (Sep 2024). Adaptive quadratic neural-network based multifidelity modeling for stiffened panels.">
 <link rel="canonical" href="https://avniyasar.github.io/publications/aiaa-journal-2024-adaptive-quad-mf.html">
 <meta name="robots" content="index,follow">
 
-<!-- OG/Twitter -->
-<meta property="og:type" content="article">
-<meta property="og:title" content="Adaptive-Quadratic-Neural-Network-Based Multifidelity Modeling Approach for Buckling of Stiffened Panels">
-<meta property="og:description" content="AIAA Journal (Sep 2024) — Yaşar & Gürses">
-<meta property="og:url" content="https://avniyasar.github.io/publications/aiaa-journal-2024-adaptive-quad-mf.html">
-<meta property="og:site_name" content="H. A. Yaşar">
-<meta name="twitter:card" content="summary_large_image">
-
-<!-- Highwire / Scholar -->
+<!-- Highwire/Scholar (keep as-is for indexing) -->
 <meta name="citation_title" content="Adaptive-Quadratic-Neural-Network-Based Multifidelity Modeling Approach for Buckling of Stiffened Panels">
 <meta name="citation_author" content="Hüseyin Avni Yaşar">
 <meta name="citation_author" content="Ercan Gürses">
 <meta name="citation_publication_date" content="2024/09/01">
 <meta name="citation_journal_title" content="AIAA Journal">
 <meta name="citation_doi" content="10.2514/1.J064064">
-<meta name="citation_pdf_url" content="https://avniyasar.github.io/assets/papers/aiaa2024_adaptive-quad-mf_preprint.pdf">
-<meta name="citation_abstract" content="This paper presents a method for predicting the buckling load of stiffened panels using multifidelity modeling based on quadratic neural networks (QNNs) with adaptive activation functions. The effectiveness of the proposed approach is demonstrated through a series of simulations on a range of stiffened panel configurations, and the results are compared to those obtained from traditional multifidelity and high-fidelity models in terms of accuracy and computational efficiency. Numerical experiments demonstrate that the model can accurately and efficiently predict the buckling load of stiffened panels while significantly reducing the computational cost of evaluating the surrogate model. In particular, the proposed adaptive quadratic neural networks (AQNNs) model achieves convergence approximately three times faster and four times less trainable parameters compared to traditional artificial neural networks while maintaining the same validation loss. This approach can significantly improve the design and optimization of aerospace structures by easily and quickly exploring various design configurations and finding stable and efficient configurations. This study highlights the potential of a new multifidelity modeling framework for predicting the buckling load and collapse load of aerospace structures by enhancing convergence speed and prediction accuracy while reducing the computational complexity of neural networks.">
+
+<!-- If you will NOT host the author PDF yet, leave the next line OUT and add fulltext_html_url instead -->
+<!-- <meta name="citation_pdf_url" content="https://avniyasar.github.io/publications/adaptive-quadratic-neural-network-based-multifidelity-modeling-approach-for-buckling-of-stiffened-panels.pdf"> -->
+<meta name="citation_fulltext_html_url" content="https://doi.org/10.2514/1.J064064">
+
 <link rel="alternate" type="application/x-bibtex" href="https://avniyasar.github.io/assets/bibtex/aiaa_aiaaj62_4207.bib">
 
+<!-- OG/Twitter (optional) -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="Adaptive-Quadratic-Neural-Network-Based Multifidelity Modeling — AIAA Journal (2024)">
+<meta property="og:description" content="Yaşar & Gürses · AIAA Journal (Sep 2024)">
+<meta property="og:url" content="https://avniyasar.github.io/publications/aiaa-journal-2024-adaptive-quad-mf.html">
+
+<!-- UIkit -->
 <link rel="stylesheet" href="/css/uikit.min.css">
+<script src="/js/uikit.min.js"></script>
+<script src="/js/uikit-icons.min.js"></script>
+
+<style>
+  :root {
+    --brand: #165DFF;      /* button/links */
+    --muted: #6b7280;      /* meta text */
+    --ink:   #111827;      /* headings */
+    --bg:    #0b1324;      /* header bg */
+    --bg2:   #0f1732;      /* header bg2 */
+  }
+  body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Inter, Arial, sans-serif; }
+  .hero {
+    background: linear-gradient(135deg, var(--bg), var(--bg2));
+    color: #fff;
+    padding: 48px 0 28px;
+    border-bottom: 1px solid rgba(255,255,255,.08);
+  }
+  .hero .crumbs a { color: rgba(255,255,255,.85); }
+  .paper-title { color:#fff; margin: 8px 0 6px; font-weight: 800; line-height: 1.15; }
+  .paper-meta { color: rgba(255,255,255,.75); }
+  .tag { display:inline-block; padding:2px 10px; border-radius:999px; background:#1f2a52; color:#c7d2fe; font-size:12px; margin-right:6px; }
+  .page-wrap { margin-top: 24px; }
+  .side-card .uk-card-title { margin-bottom:.25rem; }
+  .side-label { color: var(--muted); font-size: 12.5px; text-transform: uppercase; letter-spacing: .04em; }
+  .action-row .uk-button { margin-right: 8px; margin-bottom: 8px; }
+  .box { border:1px solid #e5e7eb; border-radius:12px; padding:18px; }
+  .muted { color: var(--muted); }
+  .citation pre, .bibtex pre {
+    white-space: pre-wrap; word-break: break-word; margin:0;
+    background:#0b1022; color:#e5e7eb; border-radius:10px; padding:14px; font-size: 13.5px;
+  }
+  .copy-btn { margin-left: 6px; }
+  .badge { font-size:12px; color:#374151; background:#eef2ff; border-radius:8px; padding:3px 8px; }
+</style>
 
 <!-- JSON-LD -->
 <script type="application/ld+json">
@@ -33,7 +71,6 @@
   "@context":"https://schema.org",
   "@type":"ScholarlyArticle",
   "headline":"Adaptive-Quadratic-Neural-Network-Based Multifidelity Modeling Approach for Buckling of Stiffened Panels",
-  "name":"Adaptive-Quadratic-Neural-Network-Based Multifidelity Modeling Approach for Buckling of Stiffened Panels",
   "author":[
     {"@type":"Person","name":"Hüseyin Avni Yaşar","identifier":"https://orcid.org/0000-0002-8441-9161"},
     {"@type":"Person","name":"Ercan Gürses"}
@@ -41,26 +78,156 @@
   "isPartOf":{"@type":"Periodical","name":"AIAA Journal"},
   "datePublished":"2024-09-01",
   "identifier":"https://doi.org/10.2514/1.J064064",
-  "sameAs":"https://doi.org/10.2514/1.J064064",
-  "url":"https://avniyasar.github.io/publications/aiaa-journal-2024-adaptive-quad-mf.html",
-  "encoding":{"@type":"MediaObject","contentUrl":"https://avniyasar.github.io/assets/papers/aiaa2024_adaptive-quad-mf_preprint.pdf","encodingFormat":"application/pdf"},
-  "abstract":"This paper presents a method for predicting the buckling load of stiffened panels using multifidelity modeling based on quadratic neural networks (QNNs) with adaptive activation functions..."
+  "url":"https://avniyasar.github.io/publications/aiaa-journal-2024-adaptive-quad-mf.html"
 }
 </script>
-</head><body class="uk-container uk-margin-large-top">
-<nav class="uk-breadcrumb"><ul class="uk-breadcrumb">
-<li><a href="/">Home</a></li><li><a href="/#publications">Publications</a></li><li><span>AIAA Journal (2024)</span></li>
-</ul></nav>
+</head>
+<body>
 
-<h1>Adaptive-Quadratic-Neural-Network-Based Multifidelity Modeling Approach for Buckling of Stiffened Panels</h1>
-<p class="uk-text-meta">AIAA Journal · Sep 2024 — <strong>H. A. Yaşar</strong>, E. Gürses</p>
+  <!-- HERO -->
+  <div class="hero">
+    <div class="uk-container">
+      <ul class="uk-breadcrumb crumbs uk-margin-small">
+        <li><a href="/">Home</a></li>
+        <li><a href="/#publications">Publications</a></li>
+        <li><span>AIAA Journal (2024)</span></li>
+      </ul>
 
-<p><strong>Abstract</strong><br>…same abstract as meta…</p>
+      <div class="uk-grid-large" uk-grid>
+        <div class="uk-width-expand">
+          <h1 class="paper-title uk-h2">Adaptive-Quadratic-Neural-Network-Based Multifidelity Modeling Approach for Buckling of Stiffened Panels</h1>
+          <div class="paper-meta uk-margin-small-top">
+            <span class="tag">Journal</span>
+            <span class="tag">2024</span>
+            <div class="uk-margin-small-top">AIAA Journal · Sep 2024 — <strong>H. A. Yaşar</strong>, E. Gürses</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<p class="uk-margin">
-  <a class="uk-button uk-button-primary" href="https://doi.org/10.2514/1.J064064" target="_blank" rel="noopener">Publisher / DOI</a>
-  <a class="uk-button uk-button-default" href="/assets/papers/aiaa2024_adaptive-quad-mf_preprint.pdf" target="_blank" rel="noopener">PDF (author version)</a>
-  <a class="uk-button uk-button-default" href="/assets/bibtex/aiaa_aiaaj62_4207.bib" download>BibTeX</a>
-</p>
-</body></html>
+  <!-- CONTENT -->
+  <div class="uk-container page-wrap">
+    <div class="uk-grid-large" uk-grid>
 
+      <!-- Left: main content -->
+      <div class="uk-width-2-3@m">
+        <!-- Actions -->
+        <div class="action-row uk-margin">
+          <a class="uk-button uk-button-primary" href="https://doi.org/10.2514/1.J064064" target="_blank" rel="noopener">
+            <span uk-icon="link-external"></span> Publisher / DOI
+          </a>
+
+          <!-- Smart PDF button: points to local author PDF if present, otherwise to DOI -->
+          <a id="pdfBtn" class="uk-button uk-button-default"
+             data-pdf="/publications/adaptive-quadratic-neural-network-based-multifidelity-modeling-approach-for-buckling-of-stiffened-panels.pdf"
+             data-fallback="https://doi.org/10.2514/1.J064064"
+             target="_blank" rel="noopener">
+             <span uk-icon="file-pdf"></span> PDF (author version)
+          </a>
+
+          <a class="uk-button uk-button-default" href="/assets/bibtex/aiaa_aiaaj62_4207.bib" download>
+            <span uk-icon="download"></span> BibTeX
+          </a>
+        </div>
+
+        <!-- Abstract -->
+        <div class="box uk-margin">
+          <div class="side-label uk-margin-small-bottom">Abstract</div>
+          <p>
+            …same abstract as meta…
+          </p>
+        </div>
+
+        <!-- How to cite -->
+        <div class="box citation uk-margin">
+          <div class="side-label uk-margin-small-bottom">Recommended citation</div>
+          <pre id="cite-txt">Yaşar, H. A., &amp; Gürses, E. (2024). Adaptive-Quadratic-Neural-Network-Based Multifidelity Modeling Approach for Buckling of Stiffened Panels. <i>AIAA Journal</i>. https://doi.org/10.2514/1.J064064</pre>
+          <button class="uk-button uk-button-default uk-button-small copy-btn" onclick="copyText('cite-txt')">
+            <span uk-icon="copy"></span> Copy
+          </button>
+        </div>
+
+        <!-- BibTeX (inline for quick copy) -->
+        <div class="box bibtex uk-margin">
+          <div class="side-label uk-margin-small-bottom">BibTeX (quick copy)</div>
+          <pre id="bib-inline">@article{YasarGurses2024AIAA,
+  title   = {Adaptive-Quadratic-Neural-Network-Based Multifidelity Modeling Approach for Buckling of Stiffened Panels},
+  author  = {Yaşar, Hüseyin Avni and Gürses, Ercan},
+  journal = {AIAA Journal},
+  year    = {2024},
+  doi     = {10.2514/1.J064064}
+}</pre>
+          <button class="uk-button uk-button-default uk-button-small copy-btn" onclick="copyText('bib-inline')">
+            <span uk-icon="copy"></span> Copy
+          </button>
+        </div>
+      </div>
+
+      <!-- Right: metadata card -->
+      <div class="uk-width-1-3@m">
+        <div class="uk-card uk-card-default uk-card-body side-card">
+          <h4 class="uk-card-title">Paper details</h4>
+          <div class="uk-margin-small">
+            <div class="side-label">DOI</div>
+            <div><a href="https://doi.org/10.2514/1.J064064" target="_blank" rel="noopener">10.2514/1.J064064</a></div>
+          </div>
+          <div class="uk-margin-small">
+            <div class="side-label">Authors</div>
+            <div>Hüseyin Avni Yaşar, Ercan Gürses</div>
+          </div>
+          <div class="uk-margin-small">
+            <div class="side-label">Published</div>
+            <div>Sep 2024</div>
+          </div>
+          <div class="uk-margin-small">
+            <div class="side-label">Type</div>
+            <div><span class="badge">Journal Article</span></div>
+          </div>
+          <div class="uk-margin-small">
+            <div class="side-label">ORCID</div>
+            <div><a href="https://orcid.org/0000-0002-8441-9161" target="_blank" rel="noopener">0000-0002-8441-9161</a></div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="uk-margin-large-top">
+      <a href="/" class="uk-button uk-button-text"><span uk-icon="arrow-left"></span> Back to home</a>
+    </div>
+  </div>
+
+<script>
+  // Smart PDF: if local PDF exists, use it; else fall back to publisher
+  (function(){
+    var btn = document.getElementById('pdfBtn');
+    if (!btn) return;
+    var candidate = btn.getAttribute('data-pdf');
+    var fallback  = btn.getAttribute('data-fallback');
+    // default to fallback so link always works
+    btn.href = fallback;
+    btn.innerHTML = '<span uk-icon="file-pdf"></span> PDF (publisher)';
+    // switch to local if reachable
+    fetch(candidate, { method: 'HEAD' })
+      .then(function(res){
+        if (res.ok) {
+          btn.href = candidate;
+          btn.innerHTML = '<span uk-icon="file-pdf"></span> PDF (author version)';
+        }
+      }).catch(function(){});
+  })();
+
+  // Copy helpers
+  function copyText(id){
+    var el = document.getElementById(id);
+    if (!el) return;
+    var txt = el.textContent;
+    navigator.clipboard.writeText(txt).then(function(){
+      UIkit.notification({message: 'Copied to clipboard', status: 'success', timeout: 1400});
+    }, function(){
+      alert('Copy failed');
+    });
+  }
+</script>
+</body>
+</html>
