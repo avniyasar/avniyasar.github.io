@@ -1,31 +1,46 @@
-<!DOCTYPE html><html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
 <meta charset="utf-8">
-<title>Estimating Ground-Based Cn² via QFNN — Applied Optics (2024)</title>
+<title>Estimating Ground-Based Atmospheric Turbulence Strength (Cn2) — Applied Optics (2024)</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Applied Optics (Oct 2024). Site-specific Cn² estimation using a quadratic Fourier neural network (QFNN).">
 <link rel="canonical" href="https://avniyasar.github.io/publications/applied-optics-2024-cn2-qfnn.html">
 <meta name="robots" content="index,follow">
 
-<!-- OG/Twitter -->
-<meta property="og:type" content="article">
-<meta property="og:title" content="Estimation of Ground-Based Atmospheric Turbulence Strength (Cn2) by Novel Neural Network Architecture">
-<meta property="og:description" content="Applied Optics (Oct 2024) — Çelik & Yaşar">
-<meta property="og:url" content="https://avniyasar.github.io/publications/applied-optics-2024-cn2-qfnn.html">
-<meta property="og:site_name" content="H. A. Yaşar">
-<meta name="twitter:card" content="summary_large_image">
-
-<!-- Highwire / Scholar -->
+<!-- Google Scholar / Highwire -->
 <meta name="citation_title" content="Estimation of Ground-Based Atmospheric Turbulence Strength (Cn2) by Novel Neural Network Architecture">
 <meta name="citation_author" content="Uğurcan Çelik">
 <meta name="citation_author" content="Hüseyin Avni Yaşar">
 <meta name="citation_publication_date" content="2024/10/01">
 <meta name="citation_journal_title" content="Applied Optics">
 <meta name="citation_doi" content="10.1364/AO.532723">
-<meta name="citation_pdf_url" content="https://avniyasar.github.io/assets/papers/ao2024_cn2_preprint.pdf">
-<meta name="citation_abstract" content="Estimating the atmospheric turbulence strength (Cn2) becomes significant in the research field of electromagnetic radiation transmission through the atmosphere, particularly optical waves... The trained model gives reliable estimations, achieving a value of R2=0.92 for experimental Cn2 values.">
-<link rel="alternate" type="application/x-bibtex" href="https://avniyasar.github.io/assets/bibtex/ao-63-28-7402.bib">
+<!-- no author-PDF hosted -> point to publisher HTML -->
+<meta name="citation_fulltext_html_url" content="https://doi.org/10.1364/AO.532723">
 
+<link rel="alternate" type="application/x-bibtex" href="/assets/bibtex/ao-63-28-7402.bib">
+
+<!-- OG/Twitter -->
+<meta property="og:type" content="article">
+<meta property="og:title" content="Estimating Cn2 — Applied Optics (2024)">
+<meta property="og:description" content="Çelik & Yaşar · Applied Optics (Oct 2024)">
+<meta property="og:url" content="https://avniyasar.github.io/publications/applied-optics-2024-cn2-qfnn.html">
+
+<!-- UIkit -->
 <link rel="stylesheet" href="/css/uikit.min.css">
+<script src="/js/uikit.min.js"></script>
+<script src="/js/uikit-icons.min.js"></script>
+
+<style>
+  :root{--bg:#0b1324;--bg2:#0f1732;--muted:#6b7280}
+  body{font-family:system-ui,-apple-system,Segoe UI,Inter,Roboto,Arial,sans-serif}
+  .hero{background:linear-gradient(135deg,var(--bg),var(--bg2));color:#fff;padding:48px 0 28px;border-bottom:1px solid rgba(255,255,255,.08)}
+  .paper-title{color:#fff;margin:8px 0 6px;font-weight:800;line-height:1.15}
+  .paper-meta{color:rgba(255,255,255,.8)}
+  .tag{display:inline-block;padding:2px 10px;border-radius:999px;background:#1f2a52;color:#c7d2fe;font-size:12px;margin-right:6px}
+  .box{border:1px solid #e5e7eb;border-radius:12px;padding:18px}
+  .citation pre,.bibtex pre{white-space:pre-wrap;background:#0b1022;color:#e5e7eb;border-radius:10px;padding:14px;font-size:13.5px;margin:0}
+  .copy-btn{margin-left:6px}
+</style>
 
 <!-- JSON-LD -->
 <script type="application/ld+json">
@@ -33,7 +48,6 @@
   "@context":"https://schema.org",
   "@type":"ScholarlyArticle",
   "headline":"Estimation of Ground-Based Atmospheric Turbulence Strength (Cn2) by Novel Neural Network Architecture",
-  "name":"Estimation of Ground-Based Atmospheric Turbulence Strength (Cn2) by Novel Neural Network Architecture",
   "author":[
     {"@type":"Person","name":"Uğurcan Çelik"},
     {"@type":"Person","name":"Hüseyin Avni Yaşar","identifier":"https://orcid.org/0000-0002-8441-9161"}
@@ -41,26 +55,105 @@
   "isPartOf":{"@type":"Periodical","name":"Applied Optics"},
   "datePublished":"2024-10-01",
   "identifier":"https://doi.org/10.1364/AO.532723",
-  "sameAs":"https://doi.org/10.1364/AO.532723",
-  "url":"https://avniyasar.github.io/publications/applied-optics-2024-cn2-qfnn.html",
-  "encoding":{"@type":"MediaObject","contentUrl":"https://avniyasar.github.io/assets/papers/ao2024_cn2_preprint.pdf","encodingFormat":"application/pdf"},
-  "abstract":"Estimating the atmospheric turbulence strength (Cn2) becomes significant... achieving R2=0.92 for experimental Cn2 values."
+  "url":"https://avniyasar.github.io/publications/applied-optics-2024-cn2-qfnn.html"
 }
 </script>
-</head><body class="uk-container uk-margin-large-top">
-<nav class="uk-breadcrumb"><ul class="uk-breadcrumb">
-<li><a href="/">Home</a></li><li><a href="/#publications">Publications</a></li><li><span>Applied Optics (2024)</span></li>
-</ul></nav>
+</head>
+<body>
 
-<h1>Estimation of Ground-Based Atmospheric Turbulence Strength (Cn2) by Novel Neural Network Architecture</h1>
-<p class="uk-text-meta">Applied Optics · Oct 2024 — U. Çelik, <strong>H. A. Yaşar</strong></p>
+<!-- HERO -->
+<div class="hero">
+  <div class="uk-container">
+    <ul class="uk-breadcrumb uk-margin-small">
+      <li><a href="/">Home</a></li>
+      <li><a href="/#publications">Publications</a></li>
+      <li><span>Applied Optics (2024)</span></li>
+    </ul>
+    <h1 class="paper-title uk-h2">Estimation of Ground-Based Atmospheric Turbulence Strength (Cn<sup>2</sup>) by Novel Neural Network Architecture</h1>
+    <div class="paper-meta uk-margin-small-top">
+      <span class="tag">Journal</span><span class="tag">2024</span>
+      <div>Applied Optics · Oct 2024 — U. Çelik, <strong>H. A. Yaşar</strong></div>
+    </div>
+  </div>
+</div>
 
-<p><strong>Abstract</strong><br>…same abstract as meta…</p>
+<!-- BODY -->
+<div class="uk-container uk-margin-top">
+  <div class="uk-grid-large" uk-grid>
+    <div class="uk-width-2-3@m">
+      <div class="uk-margin">
+        <a class="uk-button uk-button-primary" href="https://doi.org/10.1364/AO.532723" target="_blank" rel="noopener"><span uk-icon="link-external"></span> Publisher / DOI</a>
+        <!-- smart pdf: try local, otherwise DOI -->
+        <a id="pdfBtn" class="uk-button uk-button-default"
+           data-pdf="/publications/Estimation_of_ground-based_atmospheric_turbulence_.pdf"
+           data-fallback="https://doi.org/10.1364/AO.532723"
+           target="_blank" rel="noopener"><span uk-icon="file-pdf"></span> PDF</a>
+        <a class="uk-button uk-button-default" href="/assets/bibtex/ao-63-28-7402.bib" download><span uk-icon="download"></span> BibTeX</a>
+      </div>
 
-<p class="uk-margin">
-  <a class="uk-button uk-button-primary" href="https://doi.org/10.1364/AO.532723" target="_blank" rel="noopener">Publisher / DOI</a>
-  <a class="uk-button uk-button-default" href="/assets/papers/ao2024_cn2_preprint.pdf" target="_blank" rel="noopener">PDF (author version)</a>
-  <a class="uk-button uk-button-default" href="/assets/bibtex/ao-63-28-7402.bib" download>BibTeX</a>
-</p>
-</body></html>
+      <div class="box uk-margin">
+        <div class="uk-text-meta uk-margin-small-bottom">Abstract</div>
+        <p>Estimating the atmospheric turbulence strength (Cn<sup>2</sup>) is crucial for optical wave propagation. Site-specific prediction is difficult because classic empirical models are built from measurements across disparate climates. We train a quadratic Fourier neural network (QFNN) on winter-season field data and macro-meteorological variables from a rural site; the model delivers reliable estimates with R<sup>2</sup> ≈ 0.92 for measured Cn<sup>2</sup>, outperforming well-known baselines.</p>
+      </div>
 
+      <div class="box citation uk-margin">
+        <div class="uk-text-meta uk-margin-small-bottom">Recommended citation</div>
+<pre id="cite">Çelik, U., &amp; Yaşar, H. A. (2024). Estimation of Ground-Based Atmospheric Turbulence Strength (Cn2) by Novel Neural Network Architecture. <i>Applied Optics</i>. https://doi.org/10.1364/AO.532723</pre>
+        <button class="uk-button uk-button-default uk-button-small copy-btn" onclick="copyText('cite')"><span uk-icon="copy"></span> Copy</button>
+      </div>
+
+      <div class="box bibtex uk-margin">
+        <div class="uk-text-meta uk-margin-small-bottom">BibTeX (quick copy)</div>
+<pre id="bib">@article{CelikYasar2024AO,
+  title   = {Estimation of Ground-Based Atmospheric Turbulence Strength (Cn2) by Novel Neural Network Architecture},
+  author  = {Çelik, Uğurcan and Yaşar, Hüseyin Avni},
+  journal = {Applied Optics},
+  year    = {2024},
+  doi     = {10.1364/AO.532723}
+}</pre>
+        <button class="uk-button uk-button-default uk-button-small copy-btn" onclick="copyText('bib')"><span uk-icon="copy"></span> Copy</button>
+      </div>
+    </div>
+
+    <div class="uk-width-1-3@m">
+      <div class="uk-card uk-card-default uk-card-body">
+        <h4 class="uk-card-title">Paper details</h4>
+        <div class="uk-text-meta">DOI</div>
+        <div><a href="https://doi.org/10.1364/AO.532723" target="_blank" rel="noopener">10.1364/AO.532723</a></div>
+        <div class="uk-text-meta uk-margin-small">Authors</div>
+        <div>Uğurcan Çelik, Hüseyin Avni Yaşar</div>
+        <div class="uk-text-meta uk-margin-small">Published</div>
+        <div>Oct 2024</div>
+        <div class="uk-text-meta uk-margin-small">Type</div>
+        <div>Journal Article</div>
+        <div class="uk-text-meta uk-margin-small">ORCID</div>
+        <div><a href="https://orcid.org/0000-0002-8441-9161" target="_blank" rel="noopener">0000-0002-8441-9161</a></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="uk-margin-large-top">
+    <a href="/" class="uk-button uk-button-text"><span uk-icon="arrow-left"></span> Back to home</a>
+  </div>
+</div>
+
+<script>
+(function(){
+  var btn=document.getElementById('pdfBtn');
+  if(!btn) return;
+  var candidate=btn.getAttribute('data-pdf');
+  var fallback=btn.getAttribute('data-fallback');
+  btn.href=fallback; btn.innerHTML='<span uk-icon="file-pdf"></span> PDF (publisher)';
+  fetch(candidate,{method:'HEAD'}).then(function(res){
+    if(res.ok){ btn.href=candidate; btn.innerHTML='<span uk-icon="file-pdf"></span> PDF (author version)';}
+  }).catch(function(){});
+})();
+function copyText(id){
+  var el=document.getElementById(id); if(!el) return;
+  navigator.clipboard.writeText(el.textContent).then(function(){
+    UIkit.notification({message:'Copied to clipboard',status:'success',timeout:1400});
+  });
+}
+</script>
+</body>
+</html>
