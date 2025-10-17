@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://avniyasar.github.io/</loc></url>
-
-  <!-- Publication detail pages -->
-  <url><loc>https://avniyasar.github.io/publications/aiaa-journal-2024-adaptive-quad-mf.html</loc></url>
-  <url><loc>https://avniyasar.github.io/publications/applied-optics-2024-cn2-qfnn.html</loc></url>
-  <url><loc>https://avniyasar.github.io/publications/aiaa-aviation-2024-pinn-chf.html</loc></url>
-  <url><loc>https://avniyasar.github.io/publications/eucass-2025-nosecone-vae.html</loc></url>
-
-  <!-- PDFs you host -->
-  <url><loc>https://avniyasar.github.io/publications/EUCASS2025-722.pdf</loc></url>
+  <url>
+    <loc>https://avniyasar.github.io/</loc>
+  </url>
+  <url>
+    <loc>https://avniyasar.github.io/publications/aiaa-journal-2024-adaptive-quad-mf.html</loc>
+  </url>
+  <url>
+    <loc>https://avniyasar.github.io/publications/applied-optics-2024-cn2-qfnn.html</loc>
+  </url>
+  <url>
+    <loc>https://avniyasar.github.io/publications/aiaa-aviation-2024-pinn-chf.html</loc>
+  </url>
+  <url>
+    <loc>https://avniyasar.github.io/publications/eucass-2025-nosecone-vae.html</loc>
+  </url>
+  <url>
+    <loc>https://avniyasar.github.io/publications/EUCASS2025-722.pdf</loc>
+  </url>
+  <url>
+    <loc>https://avniyasar.github.io/publications/Estimation_of_ground-based_atmospheric_turbulence_.pdf</loc>
+  </url>
 </urlset>
